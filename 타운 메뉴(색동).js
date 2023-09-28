@@ -5,7 +5,7 @@ let now = new Date();
 let isLunchTime = now.getHours() >= 0 && now.getHours() < 14;
 
 let widget = new ListWidget();
-let title = isLunchTime ? widget.addText("타운 본관 직원식당 중식 메뉴 (색동)") : widget.addText("타운 본관 직원식당 석식 메뉴 (색동)");
+let title = isLunchTime ? widget.addText("본관 직원식당 중식 메뉴 (색동)") : widget.addText("본관 직원식당 석식 메뉴 (색동)");
 title.font = Font.boldSystemFont(20)
 title.textColor = Color.white()
 widget.addText("");

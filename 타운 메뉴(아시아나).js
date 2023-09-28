@@ -2,7 +2,7 @@
 // These must be at the very top of the file. Do not edit.
 // icon-color: deep-brown; icon-glyph: magic;
 let widget = new ListWidget();
-let title = widget.addText("타운 본관 직원식당 중식 메뉴 (아시아나)");
+let title = widget.addText("본관 직원식당 중식 메뉴 (아시아나)");
 title.font = Font.boldSystemFont(20);
 title.textColor = Color.white();
 widget.addText("");
