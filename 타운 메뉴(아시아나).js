@@ -12,7 +12,7 @@ let currentDayOfWeek = currentDate.getDay();
 
 if (currentDayOfWeek === 0 || currentDayOfWeek === 6) {
   let message = widget.addText("주말에는 운영하지 않습니다.");
-  message.textColor = Color.red();
+  message.font = Font.boldSystemFont(16);
 } else {
 
   let url = "http://www.flyamis.com/chart/date/01";

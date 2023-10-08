@@ -17,7 +17,7 @@ let req = new Request(url);
 let html = await req.loadString();
 
 let startIndex = isLunchTime ? html.indexOf("중식") : html.indexOf("석식");
-let endIndex = isLunchTime ? html.indexOf("석식") : html.indexOf("아시아나");
+let endIndex = isLunchTime ? html.indexOf("아시아나") : html.indexOf("원산지 표기");
 let menuText = html.slice(startIndex, endIndex);
 let menuItems = menuText.match(/<li>(.*?)<\/li>/g);
 let menuString = "";
